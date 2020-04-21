@@ -1,8 +1,9 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, lazy, Suspense } from "react";
 import "./home.css";
-import Profile from "./../../components/profile/profile";
 import { GlobalConsumer } from "./../../context/context";
 
+const Profile = lazy(() => import("./../../components/profile/profile"));
+const renderLoader = () => <p>Loading</p>;
 class Home extends Component {
   state = {
     username: "",
@@ -48,10 +49,9 @@ class Home extends Component {
         </div>
         <div className="home__result">
           {this.props.state.isUserFound === true ? (
-            <Fragment>
-              <p>Click projects for repository</p>
+            <Suspense fallback={renderLoader()}>
               <Profile profile={this.props.state.user} />
-            </Fragment>
+            </Suspense>
           ) : (
             <h4>{this.props.state.error}</h4>
           )}
