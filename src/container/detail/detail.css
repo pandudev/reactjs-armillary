@@ -21,7 +21,7 @@
 }
 
 .detail__readme {
-  /* width: 800px; */
+  width: 800px;
   padding: 1rem;
   border: 2px solid #2ac17e;
   margin-bottom: 2rem;
