@@ -1,0 +1,43 @@
+.repository {
+  /* border: 1px solid orangered; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.repository__header {
+  height: 100px;
+  background-color: #eeeeee;
+  align-self: stretch;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.repository > h4 {
+  margin-bottom: 1rem;
+}
+
+.repository__header > h3 {
+  text-transform: uppercase;
+  /* margin-bottom: 1rem; */
+}
+
+.repository__wrapper {
+  margin: 0 auto;
+  width: 992px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.repository__wrapper > div {
+  margin-right: 1rem;
+  word-wrap: break-word;
+}
+
+.repository__action {
+  margin-bottom: 2rem;
+}

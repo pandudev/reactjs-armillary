@@ -1,0 +1,39 @@
+/* .home {
+} */
+
+.home__search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  height: 100px;
+  margin-bottom: 2rem;
+}
+
+.home__search__box {
+  display: flex;
+  /* height: 0px; */
+}
+
+.home__search label {
+  margin-bottom: 8px;
+}
+
+.home__search__box .btn {
+  height: 35px;
+  padding: 6px 12px !important;
+}
+
+.home__result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.home__result p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
