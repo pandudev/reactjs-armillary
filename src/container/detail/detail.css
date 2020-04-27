@@ -33,11 +33,8 @@
 }
 
 .detail__action {
-  /* padding: 10px; */
   width: 400px;
   display: flex;
-  /* margin-top: 1rem; */
   justify-content: space-around;
-  /* align-items: center; */
   margin-bottom: 2rem;
 }

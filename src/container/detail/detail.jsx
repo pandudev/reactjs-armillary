@@ -25,7 +25,6 @@ class Detail extends Component {
       },
       (err) => {
         console.log(err.response);
-        // alert(err.response.statusText);
       }
     );
   };

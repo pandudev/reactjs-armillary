@@ -18,7 +18,6 @@ class Home extends Component {
   componentDidUpdate = () => {
     const input = document.querySelector("input");
     input.focus();
-    // input.select();
   };
 
   render() {

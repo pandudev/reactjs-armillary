@@ -10,12 +10,7 @@ const GlobalProvider = (Children) => {
       user: {},
       isUserFound: false,
       repositories: [],
-      // error: "",
     };
-
-    // componentDidUpdate = () => {
-    //   console.log("Update");
-    // };
 
     dispatch = (action) => {
       if (action.type === "GET_GITHUB") {
